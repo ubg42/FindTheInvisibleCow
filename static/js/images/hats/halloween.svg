@@ -1,0 +1,49 @@
+var _defs, _path, _path2, _polyline, _path3, _polyline2, _polyline3;
+const _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgHalloween(_ref, svgRef) {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    id: "halloween",
+    "data-name": "halloween",
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 134.02 101.52",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("style", null, ".cls-1{fill:#231f20;}.cls-2{fill:#4f4f4f;}.cls-3{fill:none;stroke:#fff;stroke-miterlimit:10;}"))), title === undefined ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, "halloween-hat") : title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    className: "cls-1",
+    d: "M1.08,111.8s42.52,12.28,72.74,5.59,56.17-13.56,61.28-13.1c0,0-21.83-13.86-40.37-17C93.2,87,87.65,72.71,86.87,61.55A76.44,76.44,0,0,0,69.6,17.87s-3.19,26.47-8.32,39.28C55,72.78,49,73.82,44.86,95.42,44.86,95.42,23.55,104.3,1.08,111.8Z",
+    transform: "translate(-1.08 -17.87)"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    className: "cls-2",
+    d: "M9.46,111.29s28.3,4.56,40.31,4.87c12.16,0.32,17.84.81,30.42-3,21.57-6.54,48.55-9.5,48.55-9.5s-21.6-12.6-32.47-13l3.34,5.82s-4.43-.18-9.74-10.34S83.76,65.1,83.66,60.48,80.84,37.83,71.1,25.37c0,0-2.5,20.47-7.62,32.81s-8.47,15-11,22.67-4.21,13.82-3.25,24.46A8.38,8.38,0,0,1,45,99.51S31.63,104.66,9.46,111.29Z",
+    transform: "translate(-1.08 -17.87)"
+  })), _polyline || (_polyline = /*#__PURE__*/React.createElement("polyline", {
+    className: "cls-3",
+    points: "68.04 57.2 82.97 70.94 83.88 54.61"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    className: "cls-3",
+    d: "M62.71,91.15c0.59,0,21.34-2.34,21.34-2.34l-1.85,3.7L75.49,106",
+    transform: "translate(-1.08 -17.87)"
+  })), _polyline2 || (_polyline2 = /*#__PURE__*/React.createElement("polyline", {
+    className: "cls-3",
+    points: "95.44 80.38 82.97 70.94 91.53 68.38"
+  })), _polyline3 || (_polyline3 = /*#__PURE__*/React.createElement("polyline", {
+    className: "cls-3",
+    points: "85.71 70.29 82.97 67.11 78.98 67.27 77.21 71.58 80.23 76.44 87.69 74.62 88.94 69.16 83.43 62.77 74.5 63.15 70.71 72.78 77.56 81.8 90.88 76.92 90.05 68.82 83.69 58.03 70.88 59.82 65.47 73.73 76.28 84.37 92.79 78.37"
+  })));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgHalloween);
+export default __webpack_public_path__ + "static/media/halloween.1e9664ff3e085caee076d010db673471.svg";
+export { ForwardRef as ReactComponent };
